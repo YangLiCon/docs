@@ -1,0 +1,84 @@
+:root {
+  /* 标题 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    135deg,
+    #f6ceec 10%,
+    #d939cd 100%
+  );
+
+  /* 图标背景 */
+  --vp-home-hero-image-background-image: linear-gradient(
+    135deg,
+    #f6ceec 10%,
+    #d939cd 100%
+  );
+  --vp-home-hero-image-filter: blur(150px);
+
+  /* brand按钮 */
+  --vp-button-brand-border: #f6ceec;
+  --vp-button-brand-text: #f6ceec;
+  --vp-button-brand-bg: #d939cd;
+
+  --vp-button-brand-hover-border: #f6ceec;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #d939cd;
+
+  --vp-button-brand-active-border: #f6ceec;
+}
+@media (min-width: 1440px) {
+  .VPSidebar[data-v-5321a92a] {
+    /* 左边侧边栏*/
+    padding-left: max(
+      32px,
+      calc((100% - (var(--vp-layout-max-width) - 64px)) / 20)
+    ) !important;
+
+    /* 左边侧边栏背景颜色宽度*/
+    width: 20% !important;
+  }
+  .VPContent.has-sidebar[data-v-dfb5c819] {
+    /* 中间内容右内边距 */
+    padding-right: 0 !important;
+    padding-left: 20% !important;
+  }
+  /* 中间内容宽度  */
+  .VPDoc.has-aside .content-container[data-v-4930825f] {
+    max-width: 100% !important;
+  }
+
+  .content[data-v-4930825f] {
+    order: 1;
+    margin: 0;
+    min-width: 0 !important;
+  }
+  /* 顶部导航栏 */
+  /* .VPNav[data-v-b36b3075] {
+    position: relative;
+    top: var(--vp-layout-top-height, 0px);
+    left: 0;
+    z-index: var(--vp-z-index-nav);
+    width: 100% !important;
+    pointer-events: none;
+    transition: background-color 0.5s;
+    overflow: hidden;
+  } */
+
+  /* 左上角标题 */
+  .VPNavBar.has-sidebar .title[data-v-275a6bea] {
+    padding-left: max(
+      32px,
+      calc((100% - (var(--vp-layout-max-width) - 64px)) / 20)
+    ) !important;
+    width: 0 !important;
+  }
+  /* 顶部导航栏下拉菜单 */
+  .VPNavBar.has-sidebar .content[data-v-275a6bea] {
+    padding-right: 0 !important;
+    padding-left: 20% !important;
+  }
+  /*导航栏在边框*/
+  .VPNavBar.has-sidebar .divider[data-v-275a6bea] {
+    padding-left: 0 !important;
+  }
+}
